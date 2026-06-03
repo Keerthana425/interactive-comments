@@ -1,0 +1,98 @@
+/* Write your CSS here */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #dee0e3;
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  padding: 60px;
+}
+.upp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.left-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.commentName {
+  font-size: 30px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: bold;
+}
+.tech {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #475569;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.left-image {
+  height: 50vh;
+  width: 40vw;
+}
+.buttons {
+  font-size: 10px;
+  height: 40px;
+  width: 130px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  background-color: #0284c7;
+  border-radius: 10px;
+  border-width: 0px;
+}
+.input {
+  height: 30px;
+  width: 350px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Roboto';
+}
+.texts {
+  height: 200px;
+  width: 350px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Roboto';
+}
+.line {
+  width: 90vw;
+  height: 2px;
+}
+
+.down-container {
+  display: flex;
+  flex-direction: column;
+}
+.commentss {
+  display: flex;
+  flex-direction: row;
+}
+.commentNum {
+  font-size: 15px;
+  height: 35px;
+  width: 30px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  background-color: #0284c7;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+}
+.nameComment {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #334155;
+}
+.list-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
