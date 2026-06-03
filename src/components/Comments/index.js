@@ -3,15 +3,15 @@ import {v4 as uuidv4} from 'uuid'
 import CommentItem from '../CommentItem'
 import './index.css'
 
-// const initialContainerBackgroundClassNames = [
-//   'amber',
-//   'blue',
-//   'orange',
-//   'emerald',
-//   'teal',
-//   'red',
-//   'light-blue',
-// ]
+const initialContainerBackgroundClassNames = [
+  'amber',
+  'blue',
+  'orange',
+  'emerald',
+  'teal',
+  'red',
+  'light-blue',
+]
 
 class Comments extends Component {
   state = {
@@ -24,12 +24,17 @@ class Comments extends Component {
   addOnSubmmit = event => {
     event.preventDefault()
     const {name, text} = this.state
+    const randomColor =
+      initialContainerBackgroundClassNames[
+        Math.floor(Math.random() * initialContainerBackgroundClassNames.length)
+      ]
     const newContact = {
       id: uuidv4(),
       name,
       text,
       isLikede: false,
       color: false,
+      bgcolor: randomColor,
     }
     this.setState(prevState => ({
       commentsList: [...prevState.commentsList, newContact],

@@ -4,7 +4,7 @@ import {formatDistanceToNow} from 'date-fns'
 
 const CommentItem = props => {
   const {commentDetails, likedChange, deleteComment} = props
-  const {name, text, id, isLikede, color} = commentDetails
+  const {name, text, id, isLikede, color, bgcolor} = commentDetails
   const dateee = formatDistanceToNow(new Date())
   const onLiked = () => {
     likedChange(id)
@@ -19,7 +19,7 @@ const CommentItem = props => {
   return (
     <li className="table-row">
       <div className="first-line">
-        <p className="icon">{name[0]}</p>
+        <p className={`icon ${bgcolor}`}>{name[0]}</p>
         <h1 className="name_comment">{name}</h1>
         <p className="timevlaue">{dateee}</p>
       </div>
